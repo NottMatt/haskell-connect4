@@ -47,7 +47,7 @@ gameLoop board room agent = do
                     putStr "\nPlay Again? (Y/N): "              -- prompt to play again
                     hFlush stdout
                     again <- getLine
-                    if again == "Y" then do
+                    if again == "Y" || again == "y" then do
                         putStrLn (displayBoard emptyBoard)
                         gameLoop emptyBoard emptyRoom 'H'
                     else putStrLn "Good Bye!"                   -- exit game
@@ -72,7 +72,7 @@ gameLoop board room agent = do
                 putStr "\nPlay Again? (Y/N): "                  -- prompt to play again
                 hFlush stdout
                 again <- getLine
-                if again == "Y" then do
+                if again == "Y" || again == "y" then do
                     putStrLn (displayBoard emptyBoard)
                     gameLoop emptyBoard emptyRoom 'H'
                 else putStrLn "Good Bye!"                       -- exit game
