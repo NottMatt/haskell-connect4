@@ -43,7 +43,6 @@ gameLoop board room agent = do
             else do
                 putStrLn (displayBoard newBoard)                -- show updated board
                 if isWinner newBoard then do                    -- if winner board
-                    putStrLn (displayBoard newBoard)
                     putStrLn "You Win!"                         -- Human wins
                     putStr "\nPlay Again? (Y/N): "              -- prompt to play again
                     hFlush stdout
@@ -69,7 +68,6 @@ gameLoop board room agent = do
             putStrLn "Robot Choosing..."
             putStrLn (displayBoard newBoard)                    -- show updated board
             if isWinner newBoard then do                        -- if winner board
-                putStrLn (displayBoard newBoard)
                 putStrLn "Robot Wins!"                          -- Robot wins
                 putStr "\nPlay Again? (Y/N): "                  -- prompt to play again
                 hFlush stdout
