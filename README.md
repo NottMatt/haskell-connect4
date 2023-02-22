@@ -1,8 +1,7 @@
 # Connect 4
 
-Create a Haskell program to play Connect 4 against an "AI" player.
-Place your code in `Connect4.hs`.
-The commandline usage for your program should be
+Haskell program to play Connect 4 against an "AI" player.
+The commandline usage for program is
 
 ```
 ./Connect4
